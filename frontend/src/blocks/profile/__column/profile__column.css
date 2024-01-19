@@ -1,0 +1,5 @@
+.profile__column{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}

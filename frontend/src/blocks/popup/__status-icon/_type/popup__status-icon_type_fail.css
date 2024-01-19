@@ -1,0 +1,5 @@
+.popup__status-icon_type_fail {
+  background: url("../../../../images/fail.svg") center center/cover no-repeat;
+  height: 120px;
+  width: 120px;
+}

@@ -1,0 +1,5 @@
+.popup__status-icon_type_success {
+  background: url("../../../../images/success.svg") center center/cover no-repeat;
+  height: 120px;
+  width: 120px;
+}

@@ -1,0 +1,7 @@
+.popup__photo{
+    color: #fff;
+    object-fit: cover;
+    vertical-align: bottom;
+    height: 75vh;
+    width: 75vw;
+}

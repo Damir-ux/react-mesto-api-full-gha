@@ -1,0 +1,19 @@
+.header {
+    min-height: 56px;
+    min-width: 320px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 0;
+    border-bottom: 1px solid rgb(84,84,84,0.7);
+    box-sizing: border-box;
+  }
+
+  @media (min-width: 1280px) {
+    .header{
+        /* max-width: 880px; */
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+}

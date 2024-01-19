@@ -1,0 +1,17 @@
+.register__container {
+  width: 260px;
+  min-height: 308px;
+  background-color: #fff;
+  border-radius: 10px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+@media (min-width: 700px) {
+  .register__container {
+    width: 430px;
+    height: 330px;
+  }
+}

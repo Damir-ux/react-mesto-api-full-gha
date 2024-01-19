@@ -1,0 +1,12 @@
+.profile__under-img {
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  width: 120px;
+  height: 120px;
+  transition: opacity 0.5s ease-in-out;
+  object-fit: cover;
+  display: flex;
+  justify-content: center;
+}

@@ -1,0 +1,25 @@
+.profile__title {
+    display: block;
+    font-family: 'Inter', Arial, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 27px;
+    line-height: 33px;
+    text-align: center;
+    margin: 0;
+    padding-top: 26px;
+    white-space: nowrap; /* Текст не переносится */
+    overflow: hidden; /* Обрезаем всё за пределами блока */
+    text-overflow: ellipsis; /* Добавляем многоточие */
+    max-width: 189px;
+  }
+
+  @media (min-width: 1280px) {
+    .profile__title{
+      max-width: 293px;
+      font-size: 42px;
+      line-height: 48px;
+      padding-left: 29px;
+      padding-top: 20px;
+    }
+}

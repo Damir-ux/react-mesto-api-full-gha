@@ -1,0 +1,30 @@
+.profile__subtitle {
+    justify-content: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    margin: 0 auto 0;
+    padding: 0;
+    padding-top: 8px;
+    white-space: nowrap; /* Текст не переносится */
+    overflow: hidden; /* Обрезаем всё за пределами блока */
+    text-overflow: ellipsis; /* Добавляем многоточие */
+    max-width: 157px;
+    min-width: 0;
+  }
+
+
+@media (min-width: 1280px) {
+  .profile__subtitle{
+    display: block;
+    max-width: 250px;
+    text-align: start;
+    font-size: 18px;
+    line-height: 22px;
+    justify-content: left;
+    margin: 0;
+    padding-left: 30px;
+  }
+}

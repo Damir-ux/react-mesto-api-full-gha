@@ -1,0 +1,14 @@
+.profile {
+  margin: 0;
+  margin-top: 42px;
+  min-width: 282px;
+}
+
+@media (min-width: 1280px) {
+  .profile {
+    display: flex;
+    padding-left: 200px;
+    padding-right: 200px;
+    margin-top: 40px;
+  }
+}

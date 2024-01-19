@@ -1,0 +1,9 @@
+.photo-grid__signature{
+    display: flex;
+    /* flex-direction: row; */
+    padding-top: 25px;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 24px;
+}
