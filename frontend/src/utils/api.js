@@ -1,8 +1,7 @@
 class Api {
   constructor(options) {
     this._url = options.baseUrl;
-    // this._headers = options.headers;
-    // this._authorization = options.headers.authorization;
+
   }
 
   _checkResponse(res) {
@@ -96,10 +95,7 @@ class Api {
 
 const api = new Api({
   baseUrl: "http://localhost:3000",
-  // headers: {
-  //   authorization: "751e4ae6-349e-4ceb-83c0-e92078a56011",
-  //   "Content-Type": "application/json",
-  // },
+
 });
 
 export default api;

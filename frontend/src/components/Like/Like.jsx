@@ -13,7 +13,7 @@ export default function Like({ likes, myid, cardid }) {
   function handleCardLike() {
     if (isLike) {
       api
-        .removeLike(cardid, localStorage.jwt)
+        .removeLike(cardid, localStorage.token)
         .then((res) => {
           setIsLike(false);
           setCount(res.likes.length);
@@ -21,7 +21,7 @@ export default function Like({ likes, myid, cardid }) {
         .catch((err) => console.error(`Ошибка снятия лайка ${err}`));
     } else {
       api
-        .addLike(cardid, localStorage.jwt)
+        .addLike(cardid, localStorage.token)
         .then((res) => {
           setIsLike(true);
           setCount(res.likes.length);

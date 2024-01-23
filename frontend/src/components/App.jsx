@@ -96,7 +96,7 @@ function App() {
 
   useEffect(() => {
     loggedIn &&
-      Promise.all([api.getInfo(localStorage.jwt), api.getCards(localStorage.jwt)])
+      Promise.all([api.getInfo(localStorage.token), api.getCards(localStorage.token)])
         .then(([dataUser, dataCard]) => {
           setCurrentUser(dataUser);
           setUserCards(dataCard);
@@ -107,7 +107,7 @@ function App() {
   function handleDel(evt) {
     evt.preventDefault();
     api
-      .deleteCard(deleteId, localStorage.jwt)
+      .deleteCard(deleteId, localStorage.token)
       .then(() => {
         setUserCards(
           cards.filter((card) => {
@@ -121,7 +121,7 @@ function App() {
 
   function handleUpdateUser(dataUser, reset) {
     api
-      .setUserInfo(dataUser, localStorage.jwt)
+      .setUserInfo(dataUser, localStorage.token)
       .then((res) => {
         setCurrentUser(res);
         closeAllPopups();
@@ -132,7 +132,7 @@ function App() {
 
   function handleUpdateAvatar(dataCard, reset) {
     api
-      .setAvatar(dataCard, localStorage.jwt)
+      .setAvatar(dataCard, localStorage.token)
       .then((res) => {
         setCurrentUser(res);
         closeAllPopups();
@@ -143,7 +143,7 @@ function App() {
 
   function handleAddPlaceSubmit(dataCard, reset) {
     api
-      .addCard(dataCard, localStorage.jwt)
+      .addCard(dataCard, localStorage.token)
       .then((res) => {
         setUserCards([res, ...cards]);
         closeAllPopups();
