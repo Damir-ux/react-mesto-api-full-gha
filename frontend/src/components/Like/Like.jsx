@@ -7,7 +7,7 @@ export default function Like({ likes, myid, cardid }) {
   const [count, setCount] = useState(likes.length);
 
   useEffect(() => {
-    setIsLike(likes.some((element) => myid === element._id));
+    setIsLike(likes.some((element) => myid === element));
   }, [likes, myid]);
 
   function handleCardLike() {

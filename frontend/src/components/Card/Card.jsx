@@ -8,7 +8,7 @@ export default function Card({ card, onCardClick, onDelete }) {
 
   return (
     <div className="photo-grid__item">
-      {currentUser._id === card.owner._id && (
+      {currentUser._id === card.owner && (
         <button className="photo-grid__trash" type="button" onClick={() => onDelete(card._id)} />
       )}
 
